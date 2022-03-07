@@ -5,6 +5,15 @@
 #include <cstring>
 using namespace std;
 
+/*
+KOODIA VOIDIN SWITCH CASEE VARTEN VARTEN
+string str = "-olo";
+cout << str << '\n';
+str.erase (0,2);
+cout << str << '\n';
+
+*/
+
 void temp(char* argv[], int size);
 
 int main(int argc, char* argv[]) {
@@ -229,6 +238,9 @@ void temp(char* argv[], int size) {
 					cout << endl << "Occurrences of lines containing " << '"' << searchWith << '"' << ":" << " " << foundCounter << endl;
 				}
 			}
+		}
+		else {
+		cout << "Could not find out the size of file " << '"' << fileName << '"';
 		}
 	}
 	else { // Jos käyttäjän antama asetus on liian lyhyt ilmoitetaan käyttäjälle
