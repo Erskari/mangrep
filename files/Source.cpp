@@ -5,15 +5,6 @@
 #include <cstring>
 using namespace std;
 
-/*
-KOODIA VOIDIN SWITCH CASEE VARTEN VARTEN
-string str = "-olo";
-cout << str << '\n';
-str.erase (0,2);
-cout << str << '\n';
-
-*/
-
 void temp(char* argv[], int size);
 
 int main(int argc, char* argv[]) {
