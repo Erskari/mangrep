@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
 		break;
 	}
 	case 2: {
-		cout << "Too few arguments!";
+		cout << "Too few command line arguments!";
 		break;
 	}
 	case 3: {
@@ -85,7 +85,7 @@ int main(int argc, char* argv[]) {
 		break;
 	}
 	default:
-		cout << "Too many arguments!";
+		cout << "Too many command line arguments!";
 	}
 	return EXIT_SUCCESS;
 }
@@ -231,7 +231,7 @@ void temp(char* argv[], int size) {
 				cout << '"' << searchWith << '"' << " not found in " << '"' << fileName << '"' << " at any position." << endl;
 			}
 			if (occurances) { // Tapahtuu jos hakuasetuksessa on O
-				if (insensitive) { // Tapahtuu jos hakuasetuksessa on I ja O
+				if (reverse) { // Tapahtuu jos hakuasetuksessa on R ja O
 					cout << endl << "Occurrences of lines NOT containing " << '"' << searchWith << '"' << ":" << " " << foundCounter << endl;
 				}
 				else { // Tapahtuu jos hakuasetuksessa on O
@@ -244,6 +244,6 @@ void temp(char* argv[], int size) {
 		}
 	}
 	else { // Jos käyttäjän antama asetus on liian lyhyt ilmoitetaan käyttäjälle
-	cout << "Too few arguments!" << endl;
+	cout << "Too few search arguments!" << endl;
 }
 }
